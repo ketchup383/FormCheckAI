@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legs</title>
+    <link rel="stylesheet" href="legs.css" />
+    
+    <style>
+        .accordion {
+          background-color: #eee;          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+            
+        .active, .accordion:hover {
+            background-color: #ccc; 
+        }
+            
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+    </style>
+<header>
+    <body>
+        <nav class="navbar"> 
+            <div class="navbar_container">
+                <a href="/index.html" id="navbar_logo">
+                    <img src="https://cdn.discordapp.com/attachments/1170877498993692689/1198517114269601803/Screenshot_2024-01-21_at_1.38.50_AM.png?ex=65bf310b&is=65acbc0b&hm=235a4342b7a4b517dac5420eeaf6a12a404e4926b1a8dbb9af1b4165708e5853&" alt="FormCheckAI Logo"/>
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tut.html" class="navbar__links">Tutorial</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/index.html#contactUs" class="navbar__links">Contact Us</a>
+                    </li>
+                </ul>
+        </nav>
+    </body>
+</header>
+
+<body>
+
+    <h1>Legs</h1>
+
+    <button class="accordion">Squat Description</button>
+    <div class="panel">
+        <p>Keep your knees in line with your toes to prevent unnecessary strain.<br>
+            Maintain a neutral spine throughout the movement.<br>
+            Keep your chest up and gaze forward to help with balance.<br>
+            Don't rush the movement; maintain control and balance at all times.<br>
+            Start with bodyweight squats if you're new to the exercise and gradually add weights as you become more comfortable.<br>
+            Ensure you warm up properly before doing squats to prepare your muscles and joints.<br>
+            If you have any existing injuries or medical conditions, consult with a healthcare professional or fitness trainer before attempting squats.
+            <br>
+            <py-script>
+            <button id="runButton" onclick="location.href='Squat_Clean.py'">Run Python Program</button>
+            </py-script>
+            <div id="output"></div>
+        </p>
+    </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 FormCheckAI. All rights reserved.</p>
+                <div class="social-media-links">
+                    <a href="https://www.linkedin.com/in/andrew-razvan-ungureanu-22b7402aa/" target="_blank" class="social-media-link">
+                        Andrew Ungureanu
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-taing/" target="_blank" class="social-media-link">
+                        Victor Taing
+                    </a>
+                    <a href="https://www.linkedin.com/in/vincent-dinh-vien-duong-bb92b8277/" target="_blank" class="social-media-link">
+                        Vincent Dinh-Vien Duong
+                    </a>
+                    <a href="https://www.linkedin.com/in/james-bautista-611b462ab//" target="_blank" class="social-media-link">
+                        James Bautista
+                    </a>
+                </div>
+            </div>
+        </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+</html>

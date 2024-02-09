@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial</title>
+<link rel="stylesheet" href="tut.css" />
+<style>
+    .accordion {
+      background-color: #eee;          color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+        
+    .active, .accordion:hover {
+        background-color: #ccc; 
+    }
+        
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+</style>
+</head>
+<header>
+    <body>
+        <nav class="navbar"> 
+            <div class="navbar_container">
+                <a href="/index.html" id="navbar_logo">
+                    <img src="https://cdn.discordapp.com/attachments/1170877498993692689/1198517114269601803/Screenshot_2024-01-21_at_1.38.50_AM.png?ex=65bf310b&is=65acbc0b&hm=235a4342b7a4b517dac5420eeaf6a12a404e4926b1a8dbb9af1b4165708e5853&" alt="FormCheckAI Logo" />
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tut.html" class="navbar__links">Tutorial</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/index.html#contactUs" class="navbar__links">Contact Us</a>
+                    </li>
+                </ul>
+        </nav>
+    </body>
+</header>
+<body>
+
+    <h1>Step by Step Tutorial</h1>
+
+<button class="accordion">Step 1: Set Up the AI Camera</button>
+<div class="panel">
+  <p>Begin by placing your camera that can capture the side of your body during exercises. Connect it to your computer or smartphone.</p>
+</div>
+
+<button class="accordion">Step 2: Open the AI Workout App</button>
+<div class="panel">
+  <p>Download and open the AI workout app on your device. Ensure your camera is connected and calibrated.</p>
+</div>
+
+<button class="accordion">Step 3: Select Your Exercise</button>
+<div class="panel">
+  <p>Choose the exercise you want to perform from the app's exercise library. Make sure to select the correct form you want to follow</p>
+</div>
+
+<button class="accordion">Step 4: Begin Your Workout</button>
+<div class="panel">
+  <p>Start your workout while the AI camera records your movements. Follow the on-screen instructions for each exercise.</p>
+</div>
+
+<button class="accordion">Step 5: Receive Feedback</button>
+<div class="panel">
+  <p>After each repetition, the AI camera will analyze your form and provide feedback on your screen. Pay attention to the feedback and make necessary adjustments.</p>
+</div>
+
+<button class="accordion">Step 6: Repeat and Improve</button>
+<div class="panel">
+  <p>Continue with your workout, making improvements based on the AI's feedback. The more you practice, the better your form will become.</p>
+</div>
+<body>
+    <p>With consistent practice and AI guidance, you can perfect your workout form and minimize the risk of injuries.</p>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 FormCheckAI. All rights reserved.</p>
+        <div class="social-media-links">
+            <a href="https://www.linkedin.com/in/andrew-razvan-ungureanu-22b7402aa/" target="_blank" class="social-media-link">
+                Andrew Ungureanu
+            </a>
+            <a href="https://www.linkedin.com/in/victor-taing/" target="_blank" class="social-media-link">
+                Victor Taing
+            </a>
+            <a href="https://www.linkedin.com/in/vincent-dinh-vien-duong-bb92b8277/" target="_blank" class="social-media-link">
+                Vincent Dinh-Vien Duong
+            </a>
+            <a href="https://www.linkedin.com/in/james-bautista-611b462ab//" target="_blank" class="social-media-link">
+                James Bautista
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+</script>
+
+
+
+</html>

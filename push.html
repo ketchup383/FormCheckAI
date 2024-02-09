@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>push</title>
+    <link rel="stylesheet" href="push.css" />
+    <style>
+        .accordion {
+          background-color: #eee;          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+            
+        .active, .accordion:hover {
+            background-color: #ccc; 
+        }
+            
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+    </style>
+<header>
+    <body>
+        <nav class="navbar"> 
+            <div class="navbar_container">
+                <a href="/index.html" id="navbar_logo">
+                    <img src="https://cdn.discordapp.com/attachments/1170877498993692689/1198517114269601803/Screenshot_2024-01-21_at_1.38.50_AM.png?ex=65bf310b&is=65acbc0b&hm=235a4342b7a4b517dac5420eeaf6a12a404e4926b1a8dbb9af1b4165708e5853&" alt="FormCheckAI Logo" />
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tut.html" class="navbar__links">Tutorial</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/index.html#contactUs" class="navbar__links">Contact Us</a>
+                    </li>
+                </ul>
+        </nav>
+    </body>
+</header>
+<body>
+
+    <h1>Push</h1>
+
+    <button class="accordion">Push Description</button>
+    <div class="panel">
+        <p class = "centered-text">Push exercises are a vital component of strength training, focusing on movements that involve pushing weight away from the body, thus primarily targeting the upper body's pushing muscles like the chest, shoulders, and triceps. These exercises include a range of movements, such as pressing or pushing vertically (like in overhead presses) or horizontally (as in bench presses), and they rely heavily on the extension of the elbow and shoulder joints. Key muscle groups engaged include the pectoralis major in the chest, especially crucial for horizontal pushing movements; the deltoids in the shoulders, particularly the anterior deltoids; and the triceps brachii at the back of the upper arm, responsible for elbow extension. Push exercises not only significantly enhance upper body strength, which is essential for daily activities and sports performance, but also contribute to muscle balance and functional fitness. They should be performed with proper form and controlled movements to prevent injuries and maximized muscle engagement. Gradual progression in terms of weight or resistance is recommended for continuous muscle development. Examples include gym-based exercises like the bench press and shoulder press, as well as bodyweight routines such as push-ups, all of which are essential for a balanced and effective upper body workout regimen.
+            <br><py-script>
+                <button id="runButton" onclick="location.href='Push-Ups.py'">Run Python Program</button>
+                </py-script>
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 FormCheckAI. All rights reserved.</p>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/andrew-razvan-ungureanu-22b7402aa/" target="_blank" class="social-media-link">
+                    Andrew Ungureanu
+                </a>
+                <a href="https://www.linkedin.com/in/victor-taing/" target="_blank" class="social-media-link">
+                    Victor Taing
+                </a>
+                <a href="https://www.linkedin.com/in/vincent-dinh-vien-duong-bb92b8277/" target="_blank" class="social-media-link">
+                    Vincent Dinh-Vien Duong
+                </a>
+                <a href="https://www.linkedin.com/in/james-bautista-611b462ab//" target="_blank" class="social-media-link">
+                    James Bautista
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+</html>
